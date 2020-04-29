@@ -1,0 +1,33 @@
+<!--pages/index/index.wxml-->
+<include src='header.wxml'/> 
+<view class='box'>
+  
+  
+  <swiper class="active-swiper" indicator-dots="ture" interval="100000" autoplay="ture">
+
+<swiper-item class="active" wx:for="{{activeImages}}">
+<image class="topactive" src="{{item.imagePath}}"> </image>
+</swiper-item>
+</swiper>
+</view>
+
+  <view class='icon'>
+    <navigator hover-class="none" url="/pages/list/index?title=生日&id=5b8e37e34b640a63b33272dc">
+      <image src='/images/birthday.png' mode="aspectFit"></image>
+      <text>招领/寻物</text>
+    </navigator>
+    <navigator hover-class="none" url="/pages/list/index?title=节日&id=5b8f45f2afb7c17788e11994">
+      <image src='/images/festival.png' mode="aspectFit"></image>
+      <text>发布订单</text>
+    </navigator>
+    <navigator hover-class="none" url="/pages/list/index?title=婚礼&id=5b8f4603afb7c17788e11996">
+      <image src='/images/wedding.png' mode="aspectFit"></image>
+      <text>查看最近</text>
+    </navigator>
+    <navigator hover-class="none" url="/pages/list/index?title=party&id=5b8f4612afb7c17788e11998">
+      <image src='/images/party.png' mode="aspectFit"></image>
+      <text>约局</text>
+    </navigator>
+  </view>
+
+
